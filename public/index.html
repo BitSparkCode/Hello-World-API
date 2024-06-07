@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Hello World</title>        
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Hallo Welt!</h1>
     <button id="apiButton">API Aufruf</button>
+    <button id="apiButtonName">Pers&ouml;nliche Begr&uuml;ssung</button>
     <p id="apiResponse"></p>
-
-    <script>
-        document.getElementById('apiButton').addEventListener('click', () => {
-            fetch('/api/hello')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('apiResponse').innerText = data.message;
-                });
-        });
-    </script>
+    <p id="apiResponseName"></p>
+    <script type="application/javascript" src="index.js"></script>
 </body>
 </html>

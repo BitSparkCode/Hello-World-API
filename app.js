@@ -10,6 +10,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/api/hello', (req, res) => {
   res.json({ message: 'Hallo Welt' });
 });
+app.get('/api/helloName', (req, res) => {
+  res.json({ message: 'Hallo Moritz Maier' });
+});
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}/`);
